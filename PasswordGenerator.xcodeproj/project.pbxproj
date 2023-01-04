@@ -3,29 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		614333A026F73AB900536045 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6143339F26F73AB900536045 /* AppDelegate.swift */; };
 		614333A226F73AB900536045 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614333A126F73AB900536045 /* SceneDelegate.swift */; };
-		614333A426F73AB900536045 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614333A326F73AB900536045 /* ViewController.swift */; };
-		614333A726F73AB900536045 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 614333A526F73AB900536045 /* Main.storyboard */; };
 		614333A926F73ABB00536045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 614333A826F73ABB00536045 /* Assets.xcassets */; };
 		614333AC26F73ABB00536045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 614333AA26F73ABB00536045 /* LaunchScreen.storyboard */; };
 		614333B726F73B5700536045 /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614333B626F73B5700536045 /* Password.swift */; };
+		615C3CC629658A2200111569 /* GeneratorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615C3CC529658A2200111569 /* GeneratorController.swift */; };
+		615C3CC82965946F00111569 /* GeneratorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615C3CC72965946F00111569 /* GeneratorPresenter.swift */; };
+		61F0F41D2965767400577438 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F0F41C2965767400577438 /* UIView+Extensions.swift */; };
+		61F0F41F296577AB00577438 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F0F41E296577AB00577438 /* UIColor+Extensions.swift */; };
+		61F0F421296578FC00577438 /* GeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F0F420296578FC00577438 /* GeneratorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6143339C26F73AB900536045 /* PasswordGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6143339F26F73AB900536045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		614333A126F73AB900536045 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		614333A326F73AB900536045 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		614333A626F73AB900536045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		614333A826F73ABB00536045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		614333AB26F73ABB00536045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		614333AD26F73ABB00536045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		614333B626F73B5700536045 /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
+		615C3CC529658A2200111569 /* GeneratorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorController.swift; sourceTree = "<group>"; };
+		615C3CC72965946F00111569 /* GeneratorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorPresenter.swift; sourceTree = "<group>"; };
+		61F0F41C2965767400577438 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		61F0F41E296577AB00577438 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		61F0F420296578FC00577438 /* GeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +67,8 @@
 				614333B326F73AEF00536045 /* Model */,
 				614333B426F73AF800536045 /* View */,
 				614333B526F73AFD00536045 /* Controller */,
-				614333A826F73ABB00536045 /* Assets.xcassets */,
-				614333AD26F73ABB00536045 /* Info.plist */,
+				61F0F4192965763D00577438 /* Presenter */,
+				61F0F41A2965764C00577438 /* Supporting Files */,
 			);
 			path = PasswordGenerator;
 			sourceTree = "<group>";
@@ -70,8 +76,6 @@
 		614333B326F73AEF00536045 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6143339F26F73AB900536045 /* AppDelegate.swift */,
-				614333A126F73AB900536045 /* SceneDelegate.swift */,
 				614333B626F73B5700536045 /* Password.swift */,
 			);
 			path = Model;
@@ -80,8 +84,8 @@
 		614333B426F73AF800536045 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				614333A526F73AB900536045 /* Main.storyboard */,
 				614333AA26F73ABB00536045 /* LaunchScreen.storyboard */,
+				61F0F420296578FC00577438 /* GeneratorView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -89,9 +93,38 @@
 		614333B526F73AFD00536045 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				614333A326F73AB900536045 /* ViewController.swift */,
+				615C3CC529658A2200111569 /* GeneratorController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		61F0F4192965763D00577438 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				615C3CC72965946F00111569 /* GeneratorPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		61F0F41A2965764C00577438 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6143339F26F73AB900536045 /* AppDelegate.swift */,
+				614333A126F73AB900536045 /* SceneDelegate.swift */,
+				614333AD26F73ABB00536045 /* Info.plist */,
+				614333A826F73ABB00536045 /* Assets.xcassets */,
+				61F0F41B2965766100577438 /* Helpers */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61F0F41B2965766100577438 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				61F0F41C2965767400577438 /* UIView+Extensions.swift */,
+				61F0F41E296577AB00577438 /* UIColor+Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +137,7 @@
 				6143339826F73AB900536045 /* Sources */,
 				6143339926F73AB900536045 /* Frameworks */,
 				6143339A26F73AB900536045 /* Resources */,
+				615C3CC92965A85900111569 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -153,35 +187,51 @@
 			files = (
 				614333AC26F73ABB00536045 /* LaunchScreen.storyboard in Resources */,
 				614333A926F73ABB00536045 /* Assets.xcassets in Resources */,
-				614333A726F73AB900536045 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		615C3CC92965A85900111569 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6143339826F73AB900536045 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61F0F421296578FC00577438 /* GeneratorView.swift in Sources */,
 				614333B726F73B5700536045 /* Password.swift in Sources */,
-				614333A426F73AB900536045 /* ViewController.swift in Sources */,
+				61F0F41F296577AB00577438 /* UIColor+Extensions.swift in Sources */,
+				615C3CC82965946F00111569 /* GeneratorPresenter.swift in Sources */,
+				61F0F41D2965767400577438 /* UIView+Extensions.swift in Sources */,
 				614333A026F73AB900536045 /* AppDelegate.swift in Sources */,
 				614333A226F73AB900536045 /* SceneDelegate.swift in Sources */,
+				615C3CC629658A2200111569 /* GeneratorController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		614333A526F73AB900536045 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				614333A626F73AB900536045 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		614333AA26F73ABB00536045 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -316,15 +366,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7WTLW784B9;
-				INFOPLIST_FILE = PasswordGenerator/Info.plist;
+				INFOPLIST_FILE = "PasswordGenerator/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Ilya.I-Am-Rich-AppBrewery";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ilya.PasswordGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -335,15 +388,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7WTLW784B9;
-				INFOPLIST_FILE = PasswordGenerator/Info.plist;
+				INFOPLIST_FILE = "PasswordGenerator/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Ilya.I-Am-Rich-AppBrewery";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ilya.PasswordGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
