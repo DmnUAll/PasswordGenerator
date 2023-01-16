@@ -10,7 +10,6 @@
 		614333A026F73AB900536045 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6143339F26F73AB900536045 /* AppDelegate.swift */; };
 		614333A226F73AB900536045 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614333A126F73AB900536045 /* SceneDelegate.swift */; };
 		614333A926F73ABB00536045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 614333A826F73ABB00536045 /* Assets.xcassets */; };
-		614333AC26F73ABB00536045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 614333AA26F73ABB00536045 /* LaunchScreen.storyboard */; };
 		614333B726F73B5700536045 /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614333B626F73B5700536045 /* Password.swift */; };
 		615C3CC629658A2200111569 /* GeneratorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615C3CC529658A2200111569 /* GeneratorController.swift */; };
 		615C3CC82965946F00111569 /* GeneratorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615C3CC72965946F00111569 /* GeneratorPresenter.swift */; };
@@ -24,7 +23,6 @@
 		6143339F26F73AB900536045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		614333A126F73AB900536045 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		614333A826F73ABB00536045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		614333AB26F73ABB00536045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		614333AD26F73ABB00536045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		614333B626F73B5700536045 /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
 		615C3CC529658A2200111569 /* GeneratorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorController.swift; sourceTree = "<group>"; };
@@ -84,7 +82,6 @@
 		614333B426F73AF800536045 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				614333AA26F73ABB00536045 /* LaunchScreen.storyboard */,
 				61F0F420296578FC00577438 /* GeneratorView.swift */,
 			);
 			path = View;
@@ -185,7 +182,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				614333AC26F73ABB00536045 /* LaunchScreen.storyboard in Resources */,
 				614333A926F73ABB00536045 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,17 +226,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		614333AA26F73ABB00536045 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				614333AB26F73ABB00536045 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		614333AE26F73ABB00536045 /* Debug */ = {
